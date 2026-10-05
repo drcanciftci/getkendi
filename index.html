@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kendi</title>
+<meta name="description" content="Kendi — küçük ritüellerden kendi desteni kur. iPhone için rutin uygulaması.">
+<link rel="icon" href="data:,">
+<style>
+  :root { --paper:#F6F1E7; --ink:#1F1D1A; --muted:#6B655B; --green:#2E5942; --line:#E3DCCF; --card:#FFFDF8; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#17150F; --ink:#F1ECE1; --muted:#A79F91; --green:#8FBFA4; --line:#2E2A22; --card:#201D16; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 20px 64px; }
+  header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:40px; }
+  .brand { font-weight:700; letter-spacing:.2px; font-size:20px; }
+  .lang button { background:none; border:1px solid var(--line); color:var(--muted); border-radius:999px; padding:4px 12px; font:inherit; font-size:14px; cursor:pointer; }
+  .lang button[aria-pressed="true"] { color:var(--ink); border-color:var(--ink); }
+  h1 { font-size:34px; line-height:1.15; margin:0 0 12px; }
+  .lead { color:var(--muted); font-size:19px; margin:0 0 32px; }
+  h2 { font-size:22px; margin:40px 0 12px; }
+  ul { padding-left:20px; } li { margin:6px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin:12px 0; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); }
+  a { color:var(--green); text-decoration:none; } a:hover { text-decoration:underline; }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:16px; }
+  [data-lang] { display:none; } html[lang="tr"] [data-lang="tr"], html[lang="en"] [data-lang="en"] { display:block; }
+  span[data-lang] { display:none; } html[lang="tr"] span[data-lang="tr"], html[lang="en"] span[data-lang="en"] { display:inline; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">Kendi</div>
+  <div class="lang" role="group" aria-label="Dil / Language">
+    <button type="button" data-set="tr" aria-pressed="true">TR</button>
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<section data-lang="tr">
+  <h1>Küçük ritüellerden kendi desteni kur.</h1>
+  <p class="lead">Kendi, günlük rutinlerini kart olarak toplayan bir iPhone uygulaması. Bir rutini tamamladığında bileti kopar ve kavanoza düşer; günün sonunda kavanozda biriken biletler o günün özetidir.</p>
+
+  <h2>Nasıl çalışır</h2>
+  <ul>
+    <li><strong>Keşfet:</strong> hazır rutin kartlarına göz at; her kartın amacı, süresi ve kısa rehberi var.</li>
+    <li><strong>Deneme:</strong> bir kartı 14 gün dene; süre bitince kalsın mı, gitsin mi karar ver.</li>
+    <li><strong>Deck'im:</strong> seçtiğin kartlar desteni oluşturur; saatlerini ve günlerini sen belirlersin.</li>
+    <li><strong>Bugün:</strong> sıradaki kartı basılı tutarak tamamla, bilet kopsun. İstersen fotoğraf ekle.</li>
+    <li><strong>Kavanoz:</strong> geçmiş günlerin biletlerine ve serilerine bak.</li>
+  </ul>
+
+  <h2>İlkeler</h2>
+  <ul>
+    <li>Hesap yok, reklam yok, takip yok. Kayıtların telefonunda ve kendi iCloud hesabında durur.</li>
+    <li>Bildirimler yalnız sen açarsan gelir.</li>
+    <li>Sağlık verisi (adım, mesafe) yalnız yürüyüş rutinlerinde gösterilmek için okunur, saklanmaz.</li>
+  </ul>
+
+  <h2 id="destek">Destek</h2>
+  <div class="card"><h3>Soru ya da sorun</h3><p>Yaz: <a href="mailto:hi@getkendi.com">hi@getkendi.com</a>. Uygulama sürümünü ve iPhone modelini eklersen daha hızlı yardımcı oluruz.</p></div>
+  <div class="card"><h3>Verilerimi nasıl silerim?</h3><p>iPhone'u sil ya da uygulamayı kaldır: yerel veri silinir. iCloud kopyası için Ayarlar &gt; [Adın] &gt; iCloud &gt; Depolamayı Yönet &gt; Kendi &gt; Verileri Sil.</p></div>
+  <div class="card"><h3>Başka cihazda görünmüyor</h3><p>İki cihazda da aynı Apple hesabı ve iCloud Drive açık olmalı. Eşitleme Wi-Fi'de birkaç dakika alabilir.</p></div>
+  <div class="card"><h3>Fotoğraflar eşitleniyor mu?</h3><p>Hayır. Rutin fotoğrafları yalnız çekildiği telefonda kalır; iCloud'a gitmez.</p></div>
+</section>
+
+<section data-lang="en">
+  <h1>Build your own deck from small rituals.</h1>
+  <p class="lead">Kendi is an iPhone app that collects your daily routines as cards. When you complete a routine, its ticket tears off and drops into a jar; the tickets in the jar are your summary of the day.</p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li><strong>Discover:</strong> browse ready-made routine cards; each has a purpose, a duration and a short guide.</li>
+    <li><strong>Trial:</strong> try a card for 14 days, then decide whether it stays.</li>
+    <li><strong>My Deck:</strong> the cards you keep form your deck; you set their times and days.</li>
+    <li><strong>Today:</strong> hold the next card to complete it and tear the ticket. Add a photo if you like.</li>
+    <li><strong>Jar:</strong> look back at past days' tickets and streaks.</li>
+  </ul>
+
+  <h2>Principles</h2>
+  <ul>
+    <li>No account, no ads, no tracking. Your records stay on your phone and in your own iCloud.</li>
+    <li>Notifications only if you turn them on.</li>
+    <li>Health data (steps, distance) is read only to show it on walking routines; it is never stored.</li>
+  </ul>
+
+  <h2 id="support">Support</h2>
+  <div class="card"><h3>Questions or problems</h3><p>Write to <a href="mailto:hi@getkendi.com">hi@getkendi.com</a>. Including your app version and iPhone model helps us answer faster.</p></div>
+  <div class="card"><h3>How do I delete my data?</h3><p>Deleting the app removes local data. For the iCloud copy: Settings &gt; [your name] &gt; iCloud &gt; Manage Storage &gt; Kendi &gt; Delete Data.</p></div>
+  <div class="card"><h3>Not showing on my other device</h3><p>Both devices need the same Apple Account with iCloud Drive on. Sync can take a few minutes on Wi-Fi.</p></div>
+  <div class="card"><h3>Do photos sync?</h3><p>No. Routine photos stay only on the phone that took them; they are not sent to iCloud.</p></div>
+</section>
+
+<footer>
+  <span><span data-lang="tr">Gizlilik politikası:</span><span data-lang="en">Privacy policy:</span> <a href="/privacy/">getkendi.com/privacy</a></span>
+  <span>© 2026 Wrinkledbrain LLC</span>
+</footer>
+</main>
+<script>
+(function(){
+  var html=document.documentElement, btns=document.querySelectorAll('.lang button');
+  function set(l){ html.setAttribute('lang',l); btns.forEach(function(b){b.setAttribute('aria-pressed', String(b.dataset.set===l));}); try{localStorage.setItem('kendi-lang',l);}catch(e){} }
+  var q=new URLSearchParams(location.search).get('lang'), saved=null; try{saved=localStorage.getItem('kendi-lang');}catch(e){}
+  set(q==='en'||q==='tr'?q:(saved||((navigator.language||'tr').slice(0,2)==='en'?'en':'tr')));
+  btns.forEach(function(b){ b.addEventListener('click', function(){ set(b.dataset.set); }); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kendi — Gizlilik Politikası / Privacy Policy</title>
+<meta name="description" content="Kendi iPhone uygulamasının gizlilik politikası. Privacy policy for the Kendi iPhone app.">
+<link rel="icon" href="data:,">
+<style>
+  :root { --paper:#F6F1E7; --ink:#1F1D1A; --muted:#6B655B; --green:#2E5942; --line:#E3DCCF; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#17150F; --ink:#F1ECE1; --muted:#A79F91; --green:#8FBFA4; --line:#2E2A22; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 20px 64px; }
+  header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:36px; }
+  .brand a { color:var(--ink); font-weight:700; font-size:20px; text-decoration:none; }
+  .lang button { background:none; border:1px solid var(--line); color:var(--muted); border-radius:999px; padding:4px 12px; font:inherit; font-size:14px; cursor:pointer; }
+  .lang button[aria-pressed="true"] { color:var(--ink); border-color:var(--ink); }
+  h1 { font-size:30px; line-height:1.2; margin:0 0 6px; }
+  .date { color:var(--muted); margin:0 0 28px; }
+  h2 { font-size:20px; margin:32px 0 8px; }
+  ul { padding-left:20px; } li { margin:6px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  a { color:var(--green); text-decoration:none; } a:hover { text-decoration:underline; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+  [data-lang] { display:none; } html[lang="tr"] [data-lang="tr"], html[lang="en"] [data-lang="en"] { display:block; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand"><a href="/">Kendi</a></div>
+  <div class="lang" role="group" aria-label="Dil / Language">
+    <button type="button" data-set="tr" aria-pressed="true">TR</button>
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<article data-lang="tr">
+  <h1>Gizlilik Politikası</h1>
+  <p class="date">Yürürlük: 4 Ekim 2026 · Wrinkledbrain LLC</p>
+
+  <p>Kendi, Wrinkledbrain LLC tarafından geliştirilen bir iPhone uygulamasıdır. Bu politika Kendi'nin hangi verileri işlediğini, nerede sakladığını ve senin bu veriler üzerindeki haklarını anlatır. Kısaca: <strong>verilerin telefonunda ve kendi iCloud hesabında kalır; bize hiçbir kişisel veri gelmez.</strong></p>
+
+  <h2>1. Toplamadığımız şeyler</h2>
+  <ul>
+    <li>Hesap açılmaz; ad, e-posta, telefon numarası istenmez.</li>
+    <li>Uygulama içinde analitik, reklam ya da takip yazılımı yoktur. Üçüncü taraf SDK kullanılmaz.</li>
+    <li>Kullanım verisi, cihaz kimliği ya da konum geliştiriciye gönderilmez.</li>
+  </ul>
+
+  <h2>2. Uygulamanın işlediği veriler ve yerleri</h2>
+  <table>
+    <tr><th>Veri</th><th>Amaç</th><th>Nerede durur</th></tr>
+    <tr><td>Rutinlerin, programların, tamamlama kayıtların, serilerin, hisler ve notların</td><td>Uygulamanın işleyişi</td><td>Telefonunda; iCloud açıksa kendi özel iCloud veritabanında (CloudKit)</td></tr>
+    <tr><td>Rutin fotoğrafları (kamera)</td><td>Rutin gününe fotoğraf eklemek</td><td>Yalnız çekildiği telefonda; iCloud'a gitmez</td></tr>
+    <tr><td>Adım sayısı ve yürüme mesafesi (HealthKit)</td><td>Yürüyüş rutinlerinde bugünkü değeri göstermek</td><td>Okunur, saklanmaz; iCloud'a ya da bize gitmez</td></tr>
+    <tr><td>Uygulama kilidi tercihi (Face ID / Touch ID)</td><td>Uygulamayı kilitlemek</td><td>Telefonunda; biyometrik veriye uygulama erişmez, doğrulamayı iOS yapar</td></tr>
+    <tr><td>Bildirim izni ve saatleri</td><td>Rutin hatırlatmaları</td><td>Telefonunda</td></tr>
+    <tr><td>Satın alma durumu</td><td>Lisansı tanımak</td><td>Apple'ın App Store sistemlerinde; ödeme bilgisi uygulamaya gelmez</td></tr>
+  </table>
+
+  <h2>3. iCloud eşitlemesi</h2>
+  <p>iCloud açıksa kayıtların Apple'ın CloudKit altyapısında, yalnız senin Apple hesabına bağlı özel veritabanında saklanır ve aynı hesaba bağlı diğer cihazlarına eşitlenir. Geliştirici bu veritabanına erişemez. Eşitleme Apple'ın gizlilik koşullarına tabidir. iCloud'u kapatırsan veri yalnız telefonunda kalır.</p>
+
+  <h2>4. Sağlık verisi (HealthKit)</h2>
+  <p>Kendi, sen izin verirsen Apple Sağlık'tan yalnız <strong>bugünkü adım sayısını ve yürüme mesafesini okur</strong> ve yürüyüş rutinlerinin kartında gösterir. Bu veri uygulama içinde saklanmaz, iCloud'a yazılmaz, hiçbir yere gönderilmez; reklam ya da pazarlama için kullanılmaz ve üçüncü taraflarla paylaşılmaz. İzni Ayarlar &gt; Sağlık &gt; Veri Erişimi ve Cihazlar &gt; Kendi yolundan istediğin an kaldırabilirsin.</p>
+
+  <h2>5. Fotoğraflar ve kamera</h2>
+  <p>Kamera izni yalnız rutin fotoğrafı çekmek için istenir. Fotoğraflar uygulamanın kendi alanında, yalnız bu telefonda saklanır; iCloud eşitlemesine ve iCloud yedeğine dahil değildir. Fotoğrafı uygulamadan sildiğinde dosya kalıcı olarak silinir.</p>
+
+  <h2>6. Paylaşım</h2>
+  <p>"Paylaş" özelliği seçtiğin kartın görselini üretir ve iOS paylaşım sayfasına verir. Görsel yalnız senin seçtiğin uygulamaya gider; Kendi görseli kaydetmez ve hiçbir sunucuya göndermez.</p>
+
+  <h2>7. Verini silme</h2>
+  <ul>
+    <li><strong>Telefondaki veri:</strong> uygulamayı sil. Fotoğraflar da silinir.</li>
+    <li><strong>iCloud'daki veri:</strong> Ayarlar &gt; [Adın] &gt; iCloud &gt; Depolamayı Yönet &gt; Kendi &gt; Verileri Sil.</li>
+    <li>Uygulama içinde Ayarlar &gt; "Tüm fotoğrafları sil" yalnız fotoğrafları siler.</li>
+  </ul>
+
+  <h2>8. Çocuklar</h2>
+  <p>Kendi 13 yaş altındaki çocuklara yönelik değildir ve onlardan bilerek veri toplamaz; zaten hiçbir kullanıcıdan veri toplamaz.</p>
+
+  <h2>9. Değişiklikler</h2>
+  <p>Politika değişirse bu sayfa güncellenir ve yürürlük tarihi değiştirilir. Veri işleme biçimi değişecek olursa uygulama içinde de bildirilir.</p>
+
+  <h2>10. İletişim</h2>
+  <p>Wrinkledbrain LLC · <a href="mailto:hi@getkendi.com">hi@getkendi.com</a></p>
+</article>
+
+<article data-lang="en">
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective: 4 October 2026 · Wrinkledbrain LLC</p>
+
+  <p>Kendi is an iPhone app developed by Wrinkledbrain LLC. This policy explains what data Kendi processes, where it is stored, and your rights over it. In short: <strong>your data stays on your phone and in your own iCloud account; we receive no personal data.</strong></p>
+
+  <h2>1. What we do not collect</h2>
+  <ul>
+    <li>No account is created; we never ask for your name, email or phone number.</li>
+    <li>The app contains no analytics, advertising or tracking software and uses no third-party SDKs.</li>
+    <li>No usage data, device identifier or location is sent to the developer.</li>
+  </ul>
+
+  <h2>2. Data the app processes and where it lives</h2>
+  <table>
+    <tr><th>Data</th><th>Purpose</th><th>Where it lives</th></tr>
+    <tr><td>Your routines, schedules, completion records, streaks, feelings and notes</td><td>Running the app</td><td>On your phone; with iCloud on, in your private iCloud database (CloudKit)</td></tr>
+    <tr><td>Routine photos (camera)</td><td>Attaching a photo to a routine day</td><td>Only on the phone that took them; never sent to iCloud</td></tr>
+    <tr><td>Step count and walking distance (HealthKit)</td><td>Showing today's value on walking routines</td><td>Read only, never stored; never sent to iCloud or to us</td></tr>
+    <tr><td>App lock preference (Face ID / Touch ID)</td><td>Locking the app</td><td>On your phone; the app never accesses biometric data, iOS performs the check</td></tr>
+    <tr><td>Notification permission and times</td><td>Routine reminders</td><td>On your phone</td></tr>
+    <tr><td>Purchase status</td><td>Recognising your licence</td><td>In Apple's App Store systems; no payment details reach the app</td></tr>
+  </table>
+
+  <h2>3. iCloud sync</h2>
+  <p>With iCloud on, your records are stored in Apple's CloudKit infrastructure in a private database tied only to your Apple Account, and synced to your other devices signed in to the same account. The developer cannot access this database. Sync is subject to Apple's privacy terms. If you turn iCloud off, data stays on your phone only.</p>
+
+  <h2>4. Health data (HealthKit)</h2>
+  <p>With your permission, Kendi reads only <strong>today's step count and walking distance</strong> from Apple Health and shows them on the cards of walking routines. This data is not stored in the app, not written to iCloud and not sent anywhere; it is never used for advertising or marketing and never shared with third parties. You can revoke access at any time in Settings &gt; Health &gt; Data Access &amp; Devices &gt; Kendi.</p>
+
+  <h2>5. Photos and camera</h2>
+  <p>Camera permission is requested only to take routine photos. Photos are stored in the app's own storage on this phone only; they are excluded from iCloud sync and iCloud backup. Deleting a photo in the app deletes the file permanently.</p>
+
+  <h2>6. Sharing</h2>
+  <p>The Share feature renders an image of the card you chose and hands it to the iOS share sheet. The image goes only to the app you pick; Kendi does not keep it and does not upload it to any server.</p>
+
+  <h2>7. Deleting your data</h2>
+  <ul>
+    <li><strong>Data on the phone:</strong> delete the app. Photos are deleted too.</li>
+    <li><strong>Data in iCloud:</strong> Settings &gt; [your name] &gt; iCloud &gt; Manage Storage &gt; Kendi &gt; Delete Data.</li>
+    <li>In the app, Settings &gt; "Delete all photos" removes photos only.</li>
+  </ul>
+
+  <h2>8. Children</h2>
+  <p>Kendi is not directed at children under 13 and does not knowingly collect data from them; it collects no data from any user.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, this page is updated and the effective date revised. Any change to how data is processed is also announced in the app.</p>
+
+  <h2>10. Contact</h2>
+  <p>Wrinkledbrain LLC · <a href="mailto:hi@getkendi.com">hi@getkendi.com</a></p>
+</article>
+
+<footer>© 2026 Wrinkledbrain LLC · <a href="/">getkendi.com</a></footer>
+</main>
+<script>
+(function(){
+  var html=document.documentElement, btns=document.querySelectorAll('.lang button');
+  function set(l){ html.setAttribute('lang',l); btns.forEach(function(b){b.setAttribute('aria-pressed', String(b.dataset.set===l));}); try{localStorage.setItem('kendi-lang',l);}catch(e){} }
+  var q=new URLSearchParams(location.search).get('lang'), saved=null; try{saved=localStorage.getItem('kendi-lang');}catch(e){}
+  set(q==='en'||q==='tr'?q:(saved||((navigator.language||'tr').slice(0,2)==='en'?'en':'tr')));
+  btns.forEach(function(b){ b.addEventListener('click', function(){ set(b.dataset.set); }); });
+})();
+</script>
+</body>
+</html>

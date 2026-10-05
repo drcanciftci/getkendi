@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kendi</title>
+<style>
+  :root{--paper:#F6F1E7;--ink:#1F1D1A;--muted:#6B655B;--green:#2E5942}
+  @media (prefers-color-scheme: dark){:root{--paper:#17150F;--ink:#F1ECE1;--muted:#A79F91;--green:#8FBFA4}}
+  body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif}
+  main{max-width:560px;margin:0 auto;padding:56px 20px 64px}
+  h1{font-size:28px;line-height:1.2;margin:0 0 12px}.muted{color:var(--muted)}
+  a.btn{display:inline-block;margin:20px 0 8px;background:var(--green);color:#fff;text-decoration:none;border-radius:14px;padding:14px 22px;font-weight:600}
+  ul{padding-left:20px;color:var(--muted)} a{color:var(--green)}
+</style>
+</head>
+<body>
+<main>
+  <div id="link" hidden>
+    <h1>Bu rutinler seninle paylaşıldı</h1>
+    <p class="muted">Kendi yüklüyse bağlantı uygulamada açılır ve kartlar Program sayfasına gelir. Yüklü değilse önce App Store'dan indir, sonra bağlantıya yeniden dokun.</p>
+    <a class="btn" id="open" href="#">Kendi'de aç</a>
+    <p class="muted" id="store"></p>
+    <p class="muted">Bağlantıdaki kartlar:</p>
+    <ul id="cards"></ul>
+  </div>
+  <div id="notfound">
+    <h1>Sayfa bulunamadı</h1>
+    <p class="muted"><a href="/">getkendi.com</a> ana sayfasına dön.</p>
+  </div>
+</main>
+<script>
+(function(){
+  var m=location.pathname.match(/^\/d\/([a-z0-9,-]+)\/?$/);
+  if(!m) return;
+  document.getElementById('notfound').hidden=true; document.getElementById('link').hidden=false;
+  document.getElementById('open').href=location.href;
+  var ul=document.getElementById('cards'); m[1].split(',').filter(Boolean).forEach(function(id){var li=document.createElement('li');li.textContent=id.replace(/-/g,' ');ul.appendChild(li);});
+  var store=''; if(store){document.getElementById('store').innerHTML='Kendi yüklü değil mi? <a href="'+store+'">App Store</a>';}
+})();
+</script>
+</body>
+</html>

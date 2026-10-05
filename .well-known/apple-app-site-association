@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "R7J9ZWHDL5.io.wrinkledbrain.kendi"
+        ],
+        "components": [
+          {
+            "/": "/d/*",
+            "comment": "Kendi paylasim baglantisi: kart kimlikleri"
+          }
+        ]
+      }
+    ]
+  }
+}
